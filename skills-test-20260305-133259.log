@@ -1,0 +1,63 @@
+========================================
+OpenClaw Skills 自动化测试
+开始时间: Thu Mar  5 13:32:59 CST 2026
+========================================
+
+[0;34m=== 基础依赖检查 ===[0m
+[0;32m✓ PASS[0m: node
+[0;32m✓ PASS[0m: python3
+[0;32m✓ PASS[0m: curl
+[0;32m✓ PASS[0m: jq
+[0;32m✓ PASS[0m: rg
+[0;32m✓ PASS[0m: git
+[0;32m✓ PASS[0m: tmux
+[0;32m✓ PASS[0m: gh
+[0;32m✓ PASS[0m: ffmpeg
+[0;32m✓ PASS[0m: openclaw
+
+[0;34m=== 环境变量检查 ===[0m
+[0;32m✓ PASS[0m: TAVILY_API_KEY
+[0;32m✓ PASS[0m: GH_TOKEN
+[1;33m○ SKIP[0m: OPENAI_API_KEY - 未设置
+[1;33m○ SKIP[0m: NOTION_API_KEY - 未设置
+[1;33m○ SKIP[0m: ELEVENLABS_API_KEY - 未设置
+
+[0;34m=== 工作区 Skills 测试 ===[0m
+[0;34m测试 tavily-search...[0m
+[0;31m✗ FAIL[0m: tavily-search - 搜索失败
+[0;34m测试 clawdbot-filesystem...[0m
+[0;31m✗ FAIL[0m: clawdbot-filesystem - 脚本不存在
+[0;34m测试 find-skills...[0m
+[0;32m✓ PASS[0m: find-skills
+[0;34m测试 self-improving-agent...[0m
+[0;32m✓ PASS[0m: self-improving-agent
+[0;34m测试 elite-longterm-memory...[0m
+[0;32m✓ PASS[0m: elite-longterm-memory
+
+[0;34m=== 系统 Skills 测试 ===[0m
+[0;34m测试 weather...[0m
+[0;32m✓ PASS[0m: weather
+[0;34m测试 healthcheck...[0m
+[0;32m✓ PASS[0m: healthcheck
+[0;34m测试 github...[0m
+[0;32m✓ PASS[0m: github
+[0;34m测试 session-logs...[0m
+[0;31m✗ FAIL[0m: session-logs - 会话列表失败
+[0;34m测试 memory_search...[0m
+[0;32m✓ PASS[0m: memory_search
+[0;34m测试 canvas...[0m
+[0;32m✓ PASS[0m: canvas
+[0;34m测试 tmux...[0m
+[1;33m○ SKIP[0m: tmux - 无活动会话
+[0;34m测试 video-frames...[0m
+[0;32m✓ PASS[0m: video-frames
+
+[0;34m=== OpenClaw 核心功能测试 ===[0m
+[0;34m尝试 1/3[0m: openclaw status
+[0;32m✓ PASS[0m: openclaw status
+[0;34m尝试 1/3[0m: openclaw version
+[0;32m✓ PASS[0m: openclaw version
+[0;34m尝试 1/3[0m: sessions list
+[0;34m尝试 2/3[0m: sessions list
+[0;34m尝试 3/3[0m: sessions list
+[0;31m✗ FAIL[0m: sessions list - 3 次重试后仍失败

@@ -1,0 +1,10 @@
+{
+  "name": "quant-trading-strategy",
+  "version": "2.0.0",
+  "description": "A 股量化交易策略执行与监控 - K 线增强版",
+  "author": "量化助手",
+  "created": "2026-03-07",
+  "updated": "2026-03-07",
+  "tags": ["trading", "quant", "a-share", "strategy", "kline"],
+  "category": "finance"
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "elite-longterm-memory": {
+      "version": "1.2.3",
+      "installedAt": 1772636587577
+    },
+    "clawdbot-filesystem": {
+      "version": "1.0.2",
+      "installedAt": 1772636946300
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1772637474272
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772637556720
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772637579968
+    },
+    "skill-scanner": {
+      "version": "0.1.2",
+      "installedAt": 1772690361412
+    },
+    "security-scanner": {
+      "version": "1.0.0",
+      "installedAt": 1772690469157
+    }
+  }
+}
