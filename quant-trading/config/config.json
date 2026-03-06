@@ -1,0 +1,35 @@
+{
+  "initial_capital": 100000,
+  "max_position_pct": 0.10,
+  "max_drawdown": 0.08,
+  "max_daily_loss": 0.03,
+  "max_consecutive_loss": 3,
+  "turnover_threshold": 10,
+  "pullback_low": 5,
+  "pullback_high": 10,
+  "strategy_settings": {
+    "龙头回调": {
+      "enabled": true,
+      "min_confidence": 0.6
+    },
+    "突破": {
+      "enabled": true,
+      "min_confidence": 0.6
+    },
+    "情绪周期": {
+      "enabled": true,
+      "min_confidence": 0.65
+    }
+  },
+  "market_filters": {
+    "min_turnover": 5,
+    "min_market_cap": 5000000000,
+    "exclude_st": true,
+    "exclude_new_stock_days": 60
+  },
+  "schedule": {
+    "market_scan_time": "15:30",
+    "review_time": "20:00",
+    "weekly_summary_day": "Sunday"
+  }
+}

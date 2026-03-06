@@ -1,0 +1,7 @@
+{
+  "test_date": "2026-03-05",
+  "period": "2024-01-01 to 2024-01-31",
+  "initial_capital": 100000,
+  "status": "pending",
+  "note": "回测功能需要完整的历史数据接入"
+}
